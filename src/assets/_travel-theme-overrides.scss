@@ -1,0 +1,187 @@
+$gray-900:  #1B1B1D;
+$gray-800:  #2D2F31;
+$gray-700:  #53565A;
+$gray-600:  #75787B;
+$gray-500:  #A2A4A6;
+$gray-400:  #BABBBD;
+$gray-300:  #CFD0D1;
+$gray-200:  #E5E6E6;
+$gray-100:  #F5F5F5;
+$white:     #ffffff;
+
+$blue:      #231F99; // Travel brand "Cobalt" #231F99
+$cyan:      #4EC9F5; // Travel brand "Sky" #4EC9F5
+$lime:      #DBE123; // Travel brand "Lime" #DBE123
+$orange:    #E6A225; // Travel brand "Orange" #E6A225
+$dark:      $gray-600;
+$light:     $gray-200;
+$green:     #6ABF4B; // Travel brand "Grass" #6ABF4B
+$yellow:    #FFE600; // Travel brand "Lemon" #FFE600
+$red:       #F9423A; // Travel brand "Tomato" #F9423A
+
+$theme-color: (
+    "gray-900":     $gray-900,
+    "gray-800":     $gray-800,
+    "gray-700":     $gray-700,
+    "gray-600":     $gray-600,
+    "gray-500":     $gray-500,
+    "gray-400":     $gray-400,
+    "gray-300":     $gray-300,
+    "gray-200":     $gray-200,
+    "gray-100":     $gray-100,
+    "dark":         $dark,
+    "light":        $light,
+    "primary":      $blue,
+    "secondary":    $dark,
+    "success":      $green,
+    "danger":       $red,
+    "warning":      $yellow,
+    "info":         $cyan
+);
+
+$body-color: $gray-900;
+$body-color-grey: #F1F1F1;
+$body-color-blue: #F1F5F8;
+$selected-blue: #EAF3FB;
+
+$border-blue: #ABCAE9;
+$border-blue-light: #BDCEF0;
+$border-dark: $gray-500;
+$border-gray-light: $gray-300;
+$border-gray-medium: $gray-500;
+$border-gray-dark: $gray-700;
+$card-border-color: $border-gray-light;
+
+$link-hover-decoration: none;
+
+$alert-padding-y: .5rem;
+$alert-padding-x: 1rem;
+$alert-color-level: 2;
+$alert-bg-level: -10.5;
+
+$spacer: 1rem;
+$spacers: ();
+$spacers: map-merge(
+  (
+    0: 0,
+    1: ($spacer * .5),
+    2: $spacer,
+    3: ($spacer * 1.5),
+    4: ($spacer * 2),
+    5: ($spacer * 2.5),
+    6: ($spacer * 3)
+  ),
+  $spacers
+);
+
+$font-family-sans-serif:    'Source Sans Pro', sans-serif;
+$font-family-monospace:     'Source Code Pro', monospace;
+$font-family-base:          $font-family-sans-serif;
+$font-size-base:              1rem;
+$font-size-lg:                $font-size-base * 1.25;
+$font-size-sm:                $font-size-base * .875;
+
+$h6-font-size: 1.125rem;
+
+$input-font-size:           $font-size-sm;
+$custom-select-font-size:   $font-size-sm;
+$font-weight-normal:        400;
+$badge-font-weight:         $font-weight-normal;
+$alert-link-font-weight:    $font-weight-normal;
+$headings-font-weight:      400;
+
+$tooltip-font-size:         0.75rem;
+$tooltip-bg:                $gray-900;
+$tooltip-arrow-color:       $tooltip-bg;
+$tooltip-margin:            0 4px;
+$tooltip-opacity:           .95;
+
+$dropdown-font-size:        $font-size-sm;
+$dropdown-link-color:       $gray-800;
+$dropdown-link-hover-color: $gray-900;
+$dropdown-link-hover-bg:    $selected-blue;
+$dropdown-min-width:        0;
+
+$grid-gutter-width: 24px;
+
+$border-radius:        .25rem;
+$border-radius-lg:     .5rem;
+$border-radius-sm:     .25rem;
+$btn-border-radius-sm: $border-radius;
+
+$shadow-gray-1: rgba(0, 0, 0, 0.06);
+$shadow-gray-2: rgba(0, 0, 0, 0.03);
+$shadow-blue-1: rgba(0, 82, 156, 0.08);
+$shadow-blue-2: rgba(0, 82, 156, 0.05);
+
+$navbar-brand-padding-y: 0.3125rem;
+
+$nav-link-padding-y: 0.25rem;
+$nav-link-padding-x: 1rem;
+
+$nav-tabs-link-active-color:        $blue;
+$nav-tabs-link-active-border-color: $white $white $blue;
+$nav-tabs-link-hover-border-color:  $white $white transparent;
+$nav-tabs-border-color:             $gray-300;
+$nav-pills-link-active-bg:          $blue;
+
+
+$input-btn-padding-y-sm:         0.282rem;
+$input-btn-padding-x-sm:         .5rem;
+$btn-padding-y-sm:               $input-btn-padding-y-sm;
+$btn-padding-x-sm:               $input-btn-padding-x-sm;
+$btn-disabled-opacity:           1;
+
+$progress-bg: $gray-200;
+
+$toast-border-color:    $gray-300;
+$toast-box-shadow:      4px 4px 0px rgba(0, 0, 0, 0.03), 2px 2px 0px rgba(0, 0, 0, 0.03);
+
+$label-margin-bottom:               .2rem;
+$input-color:                       $gray-900;
+$input-border-color:                $gray-300;
+$input-disabled-bg:                 $gray-100;
+$custom-select-border-color:        $input-border-color;
+$input-placeholder-color:           $gray-500;
+$input-plaintext-color:             $body-color;
+$input-focus-border-color:          $cyan;
+$input-focus-color:                 $input-color;
+$input-focus-box-shadow:            none;
+$input-group-addon-bg:              $gray-100;
+$input-group-addon-border-color:    $input-border-color;
+$custom-select-color:               $input-color;
+$custom-select-focus-border-color:  $cyan;
+$custom-select-focus-box-shadow:    none;
+$custom-select-disabled-bg:         $input-disabled-bg;
+$custom-control-indicator-checked-color:    $white;
+$custom-control-indicator-checked-bg:       $orange;
+$custom-control-indicator-checked-disabled-bg:  $gray-300;
+$custom-control-indicator-checked-border-color: $orange;
+$custom-control-indicator-active-bg:            lighten($orange, 10%);
+$custom-control-indicator-disabled-bg:          $gray-200;
+$custom-control-indicator-focus-box-shadow: 0 0 0 0.2rem rgba($orange, .25);
+$custom-control-indicator-focus-border-color:   $input-border-color;
+$custom-control-indicator-border-color: $gray-300;
+
+$table-border-color:          $gray-200;
+
+$card-spacer-y:         1rem;
+$card-spacer-x:         1rem;
+$card-columns-margin:   1.5rem;
+$card-group-margin:     1.5rem;
+
+// $component-active-bg:           $selected-blue;
+$dropdown-link-active-color:    $gray-900;
+$dropdown-link-active-bg:       $selected-blue;
+
+$pagination-disabled-color:         $gray-500;
+//$pagination-active-bg:              $pagination-color;
+// $pagination-active-border-color:    $pagination-active-bg;
+
+$text-muted:   $gray-600;
+
+$popover-arrow-outer-color:      $border-dark;
+
+$modal-content-border-radius: 4px;
+$modal-header-border-color: $gray-200;
+$modal-footer-border-color: $gray-200;

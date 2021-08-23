@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react';
 
-export function home() {
+
+export function Dashboard() {
     return (
-        <div>
-
-        </div>
+        <main className="container-fluid d-flex flex-column flex-grow-1 overflow-hidden">
+     hii
+        </main>
     )
 }
+

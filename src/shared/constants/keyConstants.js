@@ -13,6 +13,6 @@ const KEY = {
     KEY_SAVEBUTTON: "save",
     KEY_ESCAPE: "Escape",
   };
-  
+
   const keyConstants = { ...KEY };
   export default keyConstants;
