@@ -10,6 +10,7 @@ export class App extends Component {
       <Fragment>
         <PageHeader/>
          <Routes />
+         <div class="back-top back-top-show"><i class="bi bi-arrow-up-short"></i></div> 
       </Fragment>
 
     )

@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import { Switch, Route, Redirect } from "react-router-dom";
-import { Dashboard } from "../components/Dashboard/Dashboard"
+import { Dashboard } from "../Components/Dashboard/Dashboard";
+import  {ArticlesDetails} from "../Components/ArticlesDeatils/ArticlesDetails"
 
 export class Routes extends Component {
     render() {
         return (
             <Switch>
-              <Route path="/" component={Dashboard}/>
+              <Route exact path="/" component={Dashboard}/>
+               <Route exact path='/:id' component={ArticlesDetails}/>
 
             </Switch>
         )
