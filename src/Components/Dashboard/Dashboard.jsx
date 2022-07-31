@@ -5,6 +5,7 @@ import SkeletonVideo from "../../shared/components/skeletons/SkeletonVideo";
 import { Spinner } from "../../shared/components/Spinner/Spinner";
 import { useDispatch, useSelector } from "react-redux";
 import { getLatestArticles } from "../../redux/actions/latestArticlesAction";
+import { Banner } from "../../shared/components/Banner/Banner";
 
 export function Dashboard() {
   const dispatch = useDispatch();
@@ -19,16 +20,21 @@ export function Dashboard() {
   };
 
   return (
-    <>
+    <div className="container">
+      <div className="row">
+        <Banner />
+      </div>
+
       {loading ? (
         <Spinner />
       ) : (
-        <div className="container">
-          <div className="row">
-            <div className="col-md-12">
-          <div className="section-title listpostsbycats mb-2">          
-					<h2 className="m-0"><i class="bi bi-megaphone me-2"></i><span>Featured Posts</span></h2>          			
-				</div>
+        <div className="row">
+          <div className="section-title listpostsbycats mb-4">
+            <h2 className="m-0">
+              <i class="bi bi-megaphone me-2"></i>
+              <span>Featured Posts</span>
+            </h2>
+          </div>
           <InfiniteScroll
             dataLength={articles.length}
             next={fetchData}
@@ -39,8 +45,10 @@ export function Dashboard() {
             className="row mb-2"
           >
             {!loading
-              ? articles.map((item) => (                  
-                    <Card key={item.id} articles={item} />                 
+              ? articles.map((item) => (
+                  <div className="col-lg-9 mx-auto">
+                    <Card key={item.id} articles={item} />
+                  </div>
                 ))
               : [...Array(20)].map(() => (
                   <div className="col-md-3 mt-2">
@@ -49,9 +57,7 @@ export function Dashboard() {
                 ))}
           </InfiniteScroll>
         </div>
-        </div>
-        </div>
       )}
-    </>
+    </div>
   );
 }

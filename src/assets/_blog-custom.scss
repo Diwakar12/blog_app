@@ -5026,8 +5026,8 @@ textarea.form-control-lg {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  border: 0 solid rgba(0, 0, 0, 0.1);
-  border-radius: 0.7rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  //border-radius: 0.7rem;
 }
 .card > hr {
   margin-right: 0;
@@ -16144,5 +16144,47 @@ a.text-primary-hover:hover, button.text-primary-hover:hover {
   font-size: 1.4rem;
   margin-bottom: 27px;
 }
+
+
+
+.padlr10 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.wrapthumbnail {
+  height: 245px;
+  position: absolute;
+  top: 0px;    
+  width: 216px;
+}
+
+.scrollTop {
+  position: fixed; 
+  width: 100%;
+  bottom: 20px;
+  align-items: center;
+  height: 20px;
+  justify-content: center;
+  z-index: 1000;
+  cursor: pointer;
+  animation: fadeIn 0.3s;
+  transition: opacity 0.4s;
+  opacity: 0.5;
+}
+
+.scrollTop:hover{
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
 /*User CSS*/
 /*# sourceMappingURL=style.css.map */

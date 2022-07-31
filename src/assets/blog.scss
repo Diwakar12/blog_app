@@ -1,11 +1,11 @@
 // Theme Overrides
-@import "_travel-theme-overrides";
+@import "_blog-theme-overrides";
 
 // import Bootstrap to set the changes
 @import "../../node_modules/bootstrap//scss/bootstrap";
 
 // import custom Travel CSS
-@import "_travel-custom";
+@import "_blog-custom";
 
 //******* Custom Travel CSS *********
 
