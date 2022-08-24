@@ -20,6 +20,7 @@ export function Dashboard() {
   };
 
   return (
+    <main>
     <div className="container">
       <div className="row">
         <Banner />
@@ -59,5 +60,6 @@ export function Dashboard() {
         </div>
       )}
     </div>
+    </main>
   );
 }

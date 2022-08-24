@@ -16,14 +16,18 @@ function InputText(props) {
     placeholder,    
     inputRef,
     autoComplete,
+    label
    
   } = props;
 
     return (
       <>
+       <label  className="form-label">
+            {label}
+          </label>
         <input
           type={type}
-          className={`form-control ps-5 bg-light`}
+          className={`form-control`}
           maxLength={maxLength}
           id={id}
           value={value || ""}

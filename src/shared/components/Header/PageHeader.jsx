@@ -9,7 +9,7 @@ export function PageHeader() {
         className="navbar-light fixed-top header-static bg-mode">
         <nav className="navbar navbar-expand-lg">
         <div className="container">        
-        <RajDharmaLogo logo={rajDharmaLogoWhite} logoHeight="160"/>			
+          <RajDharmaLogo logo={rajDharmaLogoWhite} logoHeight="120"/>			
           </div>
         </nav>
       </header>
