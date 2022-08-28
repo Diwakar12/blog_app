@@ -15,9 +15,10 @@ export const Register = () => {
               <div className="mt-4">
               <div class="mb-3 input-group-lg">
                 <InputText
-                 id="email"
-                 name="email"
-                 placeholder="Enter email"
+                 id="name"
+                 name="name"
+                 placeholder="Full Name"
+                 label="Full Name"
                 />
               </div>
               </div>

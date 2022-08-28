@@ -16844,5 +16844,12 @@ html[data-theme=dark] .light-mode-item {
     max-width: 100%;
   }
 }
+.invalid-feedback {
+  display: none;
+  width: 100%;
+  margin-top: 0.25rem;
+  font-size: 80%;
+  color: #F9423A;
+}
 /*User CSS*/
 /*# sourceMappingURL=style.css.map */

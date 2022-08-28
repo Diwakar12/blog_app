@@ -16,7 +16,8 @@ function InputText(props) {
     placeholder,    
     inputRef,
     autoComplete,
-    label
+    label,
+    error
    
   } = props;
 
@@ -42,6 +43,7 @@ function InputText(props) {
           ref={inputRef}
           autoComplete={autoComplete}
         />
+        {error && <div className="invalid-feedback">{error}</div>}
       </>
     );  
 }
