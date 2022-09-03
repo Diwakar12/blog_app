@@ -4,21 +4,22 @@ import React from "react";
 function InputText(props) {
   const {
     type,
-    value,    
+    value,
     id,
     isDisabled,
     onKeyPress,
     name,
     handleBlur,
-    tabIndex,   
+    tabIndex,
     maxLength,
-    handleKeyDown,    
-    placeholder,    
+    handleKeyDown,
+    placeholder,
     inputRef,
     autoComplete,
     label,
-    error
-   
+    error,
+    style,
+    handleChange
   } = props;
 
     return (
@@ -33,7 +34,7 @@ function InputText(props) {
           id={id}
           value={value || ""}
           placeholder={placeholder}
-         // onChange={handleChange}
+          onChange={handleChange}
           disabled={isDisabled}
           onKeyPress={onKeyPress}
           onBlur={handleBlur}
@@ -41,11 +42,12 @@ function InputText(props) {
           tabIndex={tabIndex}
           name={name}
           ref={inputRef}
+          style={style}
           autoComplete={autoComplete}
         />
         {error && <div className="invalid-feedback">{error}</div>}
       </>
-    );  
+    );
 }
 
 export { InputText };
@@ -54,4 +56,6 @@ InputText.defaultProps = {
   autoComplete: "off",
   alphaNumeric: false,
   multiInput: false,
+  style: null,
+  error: ""
 };
