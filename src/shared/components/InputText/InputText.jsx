@@ -22,6 +22,8 @@ function InputText(props) {
     handleChange
   } = props;
 
+
+
     return (
       <>
        <label  className="form-label">
@@ -45,7 +47,7 @@ function InputText(props) {
           style={style}
           autoComplete={autoComplete}
         />
-        {error && <div className="invalid-feedback">{error}</div>}
+        {error && <div className="invalid-feedback d-block">{error}</div>}
       </>
     );
 }

@@ -16,8 +16,7 @@ export const InputSelect = (props) => {
         enableSelectOption,
         error,
         placeholder,
-        inputRef,        
-        labelId,
+        inputRef,       
         defaultSelectText,
       } = props;
   return (
